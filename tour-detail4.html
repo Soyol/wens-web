@@ -34,7 +34,68 @@
 </head>
 <body>
 
-
+<div id="modal-enquire" class="uk-modal">
+    <div class="uk-modal-dialog uk-modal-dialog-lightbox">
+        <a href="" class="uk-modal-close uk-close uk-close-alt"></a>
+        <div class="padding-20 review-modal">
+            <h2 class="text-black">Enquire now</h2>
+            <hr>
+            <form method="post" class="uk-form" action="/form-records/submit">
+                <h5 class="text-black">YOUR HOLIDAY ENQUIRY</h5>
+                <hr>
+                <div class="uk-form-row">
+                    <div class="uk-grid uk-grid-small" data-uk-grid-margin="">
+                        <div class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 uk-row-first">
+                            <div class="input text">
+                                <input type="text" name="data[country]" class="uk-width-1-1" required="required" placeholder="Please type a Country" id="data-country">
+                            </div>
+                        </div>
+                        <div class="uk-width-large-1-1 uk-width-medium-1-2 uk-width-small-1-1 uk-grid-margin uk-row-first">
+                            <div class="input textarea">
+                                <textarea  class="uk-width-1-1" required="required" placeholder="Tell us more about your holiday - eg. your dates, the tour you are interested in, number of passengers, sight you would like to see etc." rows="2" id="data-details"></textarea>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+                <h5 class="text-black">YOUR DETAILS</h5>
+                <hr>
+                <div class="uk-form-row">
+                    <div class="uk-grid uk-grid-small" data-uk-grid-margin="">
+                        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 uk-row-first">
+                            <div class="input text">
+                                <input type="text" name="data[fname]" class="uk-width-1-1" required="required" placeholder="First Name(s)" id="data-fname">
+                            </div>
+                        </div>
+                        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+                            <div class="input text">
+                                <input type="text" name="data[lname]" class="uk-width-1-1" required="required" placeholder="Last Name(s)" id="data-lname">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-form-row">
+                    <div class="uk-grid uk-grid-small" data-uk-grid-margin="">
+                        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 uk-row-first">
+                            <div class="input email">
+                                <input type="email" name="data[email]" class="uk-width-1-1" required="required" placeholder="Email Address" id="data-email">
+                            </div>
+                        </div>
+                        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+                            <div class="input tel">
+                                <input type="tel" name="data[phone]" class="uk-width-1-1" required="required" placeholder="Telephone" id="data-phone">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-form-row">
+                    <input type="hidden" name="form_id" value="1">
+                    <input type="hidden" name="source" value="http://itravelmongolia.com/">
+                    <button class="uk-button uk-text-bold uk-width-1-1" type="submit">Send</button>
+                </div>
+            </form>        
+        </div>
+    </div>
+</div>
 
 <div id="mobile-menu" class="uk-offcanvas">
     <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
